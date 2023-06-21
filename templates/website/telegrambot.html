@@ -1,0 +1,43 @@
+{% extends 'website/base.html' %}
+{% load static%}
+{% block content %}
+
+<div class="container-fluid mt-5 mb-5 text-center" style="background-color: orangered">
+  <div class="container pt-5">
+    <div class="row g-5 pt-5">
+      <div class="col-lg-12 align-self-center text-center text-lg-start mb-lg-5">
+        <h1 class="display-4 text-white mt-4 mb-4 animated slideInRight">Telegram Buddy for Your Business</h1>
+        <a href="{% url 'telegrambot' %}" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight">Read More</a>
+        <a href="{% url 'demo' %}" class="btn btn-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Book Demo</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Hero End -->
+  <!-- Hero End -->
+  
+  
+
+
+
+  <div class="container-fluid bg-light py-5">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <!-- Text content -->
+                <h1 class="mb-4">What is AI Telegram Buddy?</h1>
+                <p class="mb-4">A Telegram bot is an automated software program that operates within the Telegram messaging platform. Telegram, a cloud-based instant messaging app, provides a platform for developers to create bots that interact with users, respond to commands, and perform various tasks.</p>
+                <p class="mb-4">Telegram bots have gained popularity due to their versatility, ease of use, and extensive capabilities. They have been widely adopted for personal, business, and community purposes, offering users a seamless way to interact with automated services and access information within the Telegram app. </p>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <!-- Image -->
+                <div class="image-container">
+                  <img src="{% static 'img/telegram.png' %}" alt="My Image " style="width:75px; height:75px;">
+                  <img src="{% static 'img/telegrambot.jpg' %}" alt="My Image " style="width:600px; height:400px;">
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+{% endblock content %}

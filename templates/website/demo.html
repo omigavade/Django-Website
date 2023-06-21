@@ -1,0 +1,92 @@
+{% extends 'website/base.html' %}
+
+{% block content %}
+<!-- Hero Start -->
+<div class="container-fluid mt-5" style="background-color: orangered;">
+    <div class="container pt-2">
+        <div class="row g-5 pt-5">
+            <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
+                <h1 class="display-4 text-white mb-4 animated slideInRight">Book Demo</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Hero End -->
+{% for message in messages  %}            
+<div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+    <strong>Message:</strong> {{ message.message }}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+{% endfor %}   
+
+<!-- Contact Start -->
+<section class="Contact-section pt-2rem pb-2rem mt-78px">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-xl-8 mt-5">
+                <h3 class="heading-1 mt-6 text-center">If you have any inquiries or would like to schedule a demonstration of our product, we invite you to book a demo.</h3>
+                <p class="me-lg-4 fs-16 mt-2 text-center">We will get back to you as soon as possible.</p>
+                <!-- Form -->
+                <form method="post" action="/demo/">
+                {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="fName" class="form-label">First Name*</label>
+                        <input type="text" class="form-control" id="fName" name="fname" placeholder="John" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="lName" class="form-label">Last Name*</label>
+                        <input type="text" class="form-control" id="lName" name="lname" placeholder="Doe" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="cName" class="form-label">Company Name*</label>
+                        <input type="text" class="form-control" id="cName" name="cname" placeholder="PratimaAI" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address*</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="example@gmail.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number*</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="9876543210" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="product" class="form-label">Select the Product*</label>
+                        <select class="form-select" id="product" name="product" aria-label="Default select example" required>
+                            <option selected disabled>Select the Product</option>
+                            <option value="Virtual Buddy">Virtual Buddy</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="demo-date">Date:</label>
+                        <input type="date" id="demo-date" name="demo_date" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="demo-time">Time:</label>
+                        <input type="time" id="demo-time" name="demo_time" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message*</label>
+                        <textarea class="form-control" id="message" name="message" placeholder="Explain your requirements a bit" rows="3" required></textarea>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="terms" required>
+                        <label class="form-check-label" for="terms">I agree to the <a href="{% url 'terms' %}" class="highlighter fw-500">Terms & Conditions</a> of the company.</label>
+                    </div>
+                    <button type="submit" class="btn btn-dark btn-black w-100">Book Demo</button>
+                    <small class="d-flex justify-content-center align-items-center mt-2">
+                        <i class="fa fa-lock color-grey" aria-hidden="true"></i>
+                        We hate spam, and we respect your privacy.
+                    </small>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr>
+
+
+
+{% endblock content %}

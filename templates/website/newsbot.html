@@ -1,0 +1,41 @@
+{% extends 'website/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container-fluid mt-5  mb-5 text-center" style="background-color: orangered">
+  <div class="container pt-5">
+    <div class="row g-5 pt-5">
+      <div class="col-lg-12 align-self-center text-center text-lg-start mb-lg-5">
+        <h1 class="display-4 text-white mt-4 mb-4 animated slideInRight">News Buddy for Your Business</h1>
+        <a href="{% url 'newsbot' %}" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight">Read More</a>
+        <a href="{% url 'demo' %}" class="btn btn-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Book Demo</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+  
+
+
+
+  <div class="container-fluid bg-light py-5">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <!-- Text content -->
+                <h1 class="mb-4">What is News Buddy?</h1>
+                <p class="mb-4">A news buddy, also known as a newsbuddy or news aggregator bot, is a type of computer program or algorithm that automates the process of collecting, curating, and delivering news content to users. News buddys aim to provide up-to-date and relevant news information based on predefined criteria or user preferences.</p>
+                <p class="mb-4">It's important to note that news buddys are tools that automate news collection and delivery processes. However, the reliability and credibility of the news content they provide depend on the sources they aggregate from. Users should be cautious and verify information from multiple trusted sources before accepting it as accurate.</p>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+              <!-- Image -->
+              <img src="{% static 'img/newsbot.jpg' %}" alt="My Image " style="width:600px; height:400px;">
+          </div>
+          
+            </div>
+        </div>
+    </div>
+  </div>
+  
+{% endblock content %}

@@ -1,0 +1,277 @@
+{% extends 'website/base.html' %}
+{% load static%}
+{% block content %}
+<div class="container-fluid mt-5 mb-3" style="background-color: orangered">
+    <div class="container pt-3">
+      <div class="row g-5 pt-3">
+        <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
+          <h1 class="display-4 text-white  mb-2 animated slideInRight">Virtual Buddy for Your Business</h1>
+          <p class="text-white mb-4 animated slideInRight">Virtual Buddy is created using the Audio/Voice and Video of a real person or a 3D avatar to make the user believe that they are talking to a real person in real time.</p>
+          <a href="{% url 'virtualbuddy' %}" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight">Read More</a>
+          <a href="{% url 'demo' %}" class="btn btn-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Book Demo</a>
+        </div>
+        <div class="col-lg-6 align-self-end text-center text-lg-end">
+            <img src="{% static 'img/mainbannerr.gif' %}" alt="My Image " style="width:650px; height:400%;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Hero End -->
+  
+  <!-- About Start -->
+  <div class="container-fluid bg-light py-5">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+          <div class="col-lg-6">
+            <img src="{% static 'img/About-1.jpg' %}" alt="My Image " style="width:500px; height:400px;">
+        </div>
+        </div>
+        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+          <div class="btn btn-sm border rounded-pill text-orangered px-3 mb-3">About Us</div>
+          <h1 class="mb-4">We Make Your Business Smarter with Virtual Buddy</h1>
+          <p class="mb-4">The Virtual Buddy with custom image and custom voice has the potential to revolutionize video communication by adding a personal touch to virtual interactions</p>
+          <p class="mb-4">Virtual Buddy can benefit various industries, including customer service, education, basic health counseling, and social interactions.</p>
+  
+          <div class="d-flex align-items-center mt-4">
+            <a class="btn btn-dark rounded-pill px-4 me-3" href="{% url 'about' %}">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- About End -->
+  
+  <div class="container-fluid py-5" style="background-color: orangered">
+    <div class="container">
+      <div class="col-lg-12 wow fadeIn" data-wow-delay="0.5s">
+        <h1 class="mb-4">Do you like to create a Virtual Buddy for your Business?</h1>
+        <p class="text-white mb-4 animated slideInRight">Virtual Buddy can provide an interactive and personalized experience to your customers. Contact us to know more!</p>
+        <a href="{% url 'contact' %}" class="btn btn-light py-3 px-4 rounded-pill animated slideInRight">Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+
+ <div class="col-md-8 container-fluid bg-orangered mt-5 py-5">
+    <h1 class="mb-4 text-center">OUR PRODUCTS</h1>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                <div class="service-icon btn-square">
+                    <i class="fa fa-video fa-2x" style="color: orangered;"></i>
+                </div>
+                <h5 class="mb-3" style="color: orangered;">Virtual Buddy(Video Bot)</h5>
+                <p> Buddy is created using the Audio/Voice and Video of a real person or a 3D avatar to make the user believe that they are talking to a real person in real time.</p>
+                <a class="btn px-3 mt-auto mx-auto" style="color: orangered;" href="{% url 'virtualbuddy' %}">Read More</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                <div class="service-icon btn-square">
+                    <i class="fa fa-microphone fa-2x" style="color: orangered;"></i>
+                </div>
+                <h5 class="mb-3" style="color: orangered;">Customizable Audio/Voice Bot</h5>
+                <p>Introducing our cutting-edge voice bot, designed to revolutionize your online interactions. With our customizable voice bot, you can now have your answers delivered in the voice of your choice. </p>
+                <a class="btn px-3 mt-auto mx-auto" style="color: orangered;" href="{% url 'voicebot' %}">Read More</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                <div class="service-icon btn-square">
+                    <i class="fa fa-comment fa-2x" style="color: orangered;"></i>
+                </div>
+                <h5 class="mb-3" style="color: orangered;">Text Bot </h5>
+                <p>Introducing our innovative text bot, redefining the way you interact with technology.</p>
+                <a class="btn px-3 mt-auto mx-auto" style="color: orangered;" href="{% url 'textbot' %}">Read More</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                <div class="service-icon btn-square">
+                    <i class="fa fa-mail-bulk fa-2x" style="color: orangered;"></i>
+                </div>
+                <h5 class="mb-3" style="color: orangered;">Email Bot</h5>
+                <p>Introducing our revolutionary email bot, transforming the way you manage and interact with your inbox. </p>
+                <a class="btn px-3 mt-auto mx-auto" style="color: orangered;" href="{% url 'emailbot' %}">Read More</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                <div class="service-icon btn-square">
+                    <i class="fa fa-sms fa-2x" style="color: orangered;"></i>
+                </div>
+                <h5 class="mb-3" style="color: orangered;">SMS Bot</h5>
+                <p>Introducing our innovative SMS bot, revolutionizing the way you communicate and engage with your customers through text messages. </p>
+                <a class="btn px-3 mt-auto mx-auto" style="color: orangered;" href="{% url 'smsbot' %}">Read More</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                <div class="service-icon btn-square">
+                    <i class="fab fa-whatsapp fa-2x" style="color: orangered;"></i>
+                </div>
+                <h5 class="mb-3" style="color: orangered;">WhatsApp Bot</h5>
+                <p>Introducing our groundbreaking WhatsApp bot, revolutionizing the way you engage and interact with your customers on the popular messaging platform. </p>
+                <a class="btn px-3 mt-auto mx-auto" style="color: orangered;" href="{% url 'whatsappbot' %}">Read More</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                <div class="service-icon btn-square">
+                    <i class="fab fa-telegram-plane fa-2x" style="color: orangered;"></i>
+                </div>
+                <h5 class="mb-3" style="color: orangered;">Telegram Bot</h5>
+                <p>Introducing our cutting-edge Telegram bot, revolutionizing the way you connect and engage with your audience on the popular messaging platform. </p>
+                <a class="btn px-3 mt-auto mx-auto" style="color: orangered;" href="{% url 'telegrambot' %}">Read More</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                <div class="service-icon btn-square">
+                    <i class="fab fa-instagram fa-2x" style="color: orangered;"></i>
+                </div>
+                <h5 class="mb-3" style="color: orangered;">Social Media Bot</h5>
+                <p>Introducing our game-changing social media bot, transforming the way you engage and interact with your audience across various social platforms.</p>
+                <a class="btn px-3 mt-auto mx-auto" style="color: orangered;" href="{% url 'socialmediabot' %}">Read More</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                <div class="service-icon btn-square">
+                    <i class="fa fa-newspaper fa-2x" style="color: orangered;"></i>
+                </div>
+                <h5 class="mb-3" style="color: orangered;">News Bot</h5>
+                <p>
+                    Introducing our cutting-edge news bot, your go-to source for timely and personalized news updates.</p>
+                <a class="btn px-3 mt-auto mx-auto" style="color: orangered;" href="{% url 'newsbot' %}">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+<div class="container-fluid py-5"style="background-color:orangered">
+    <div class="container">      
+            <div class="col-lg-12 wow fadeIn" data-wow-delay="0.5s">
+                <h1 class="mb-4">Do you like to create a Virtual Buddy for your Business?</h1>
+                <p class="text-white mb-4 animated slideInRight">We Make Your Business Smarter with Vitual Buddy </p>
+                <a href="{% url 'products' %}" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight">Read More</a>
+                <a href="{% url 'demo' %}" class="btn btn-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Book Demo</a> 
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service Start -->
+<div class="container col-lg-8">
+        <div class="row align-items-center">
+            <div class=" wow fadeIn" data-wow-delay="0.1s">
+                <h1 class="pt-5 text-center">INDUSTRIES</h1>
+                <p class="mb-4" > Pratima.AI can help you to improve sales, save cost, reduce support activities, and improve customer/employee engagement & satisfaction. Same solution can be deployed across various industries</p>
+            
+                <div class="col-lg-12">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="service-item d-flex flex-column justify-content-center text-center rounded" style="height: 400px;">
+                                <div class="service-icon btn-square">
+                                    <i class="fa fa-robot fa-2x" style="color: orangered;"></i>
+                                </div>
+                                <h5 class="mb-3" style="color: orangered;">E-commerce</h5>
+                                <p>Personalized Customer Support: The chat bot can assist customers with product inquiries, order tracking, and returns, providing a seamless and interactive support experience.</p>
+                                <a class="btn px-3 mt-auto mx-auto" style="color: orangered;" href="{% url 'services' %}">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="service-item d-flex flex-column justify-content-center text-center rounded" style="height: 400px;">
+                                <div class="service-icon btn-square">
+                                    <i class="fa fa-hotel fa-2x" style="color: orangered;"></i>
+                                </div>
+                                <h5 class="mb-3" style="color: orangered;">Travel and Hospitality:</h5>
+                                <p>Virtual Concierge: The chat bot can provide travel recommendations, assist with booking flights, hotels, and activities, and offer personalized travel itineraries.</p>
+                                <a class="btn px-3 mt-auto mx-auto" style="color: orangered;" href="{% url 'services' %}">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="service-item d-flex flex-column justify-content-center text-center rounded" style="height: 400px;">
+                                <div class="service-icon btn-square">
+                                    <i class="fa fa-graduation-cap fa-2x" style="color: orangered;"></i>
+                                </div>
+                                <h5 class="mb-3" style="color: orangered;">Education</h5>
+                                <p>Virtual Consultations: The chat bot can facilitate video consultations between healthcare providers and patients, enabling remote diagnosis, monitoring, and follow-up care.</p>
+                                <a class="btn px-3 mt-auto mx-auto" style="color: orangered;" href="{% url 'services' %}">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pt-5">
+                            <div class="service-item d-flex flex-column justify-content-center text-center rounded" style="height: 400px;">
+                                <div class="service-icon btn-square">
+                                    <i class="fa fa-brain fa-2x" style="color: orangered;"></i>
+                                </div>
+                                <h5 class="mb-3" style="color: orangered;">Human Resources</h5>
+                                <p>Employee Onboarding & Support: The chat bot can assist employees with HR-related inquiries, such as leave requests, policy clarification, and access to HR resources.</p>
+                                <a class="btn px-3 mt-auto mx-auto" style="color: orangered;" href="{% url 'services' %}">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pt-5">
+                            <div class="service-item d-flex flex-column justify-content-center text-center rounded" style="height: 400px;">
+                                <div class="service-icon btn-square">
+                                    <i class="fa fa-home fa-2x" style="color: orangered;"></i>
+                                </div>
+                                <h5 class="mb-3" style="color: orangered;">Real Estate: </h5>
+                                <p>Real estate companies leverage chatbots to provide property information, schedule property viewings, and answer buyer and seller queries.</p>
+                                <a class="btn px-3 mt-auto mx-auto" style="color: orangered;" href="{% url 'services' %}">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pt-5">
+                            <div class="service-item d-flex flex-column justify-content-center text-center rounded" style="height: 400px;">
+                                <div class="service-icon btn-square">
+                                    <i class="fa fa-tasks fa-2x" style="color: orangered;"></i>
+                                </div>
+                                <h5 class="mb-3" style="color: orangered;">Insurance:</h5>
+                                <p>Chatbots are utilized by insurance companies to provide policy information, assist with claims processing, and answer general insurance-related questions.</p>
+                                <a class="btn px-3 mt-auto mx-auto" style="color: orangered;" href="{% url 'services' %}">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pt-5 pb-5">
+                            <div class="service-item d-flex flex-column justify-content-center text-center rounded" style="height: 400px;">
+                                <div class="service-icon btn-square">
+                                    <i class="fa fa-music fa-2x" style="color: orangered;"></i>
+                                </div>
+                                <h5 class="mb-3" style="color: orangered;">Entertainment:</h5>
+                                <p>Chatbots are used in the entertainment industry to engage users, recommend movies, TV shows, and music based on their preferences, and provide information about upcoming events.</p>
+                                <a class="btn px-3 mt-auto mx-auto" style="color: orangered;" href="{% url 'services' %}">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pt-5 pb-5">
+                            <div class="service-item d-flex flex-column justify-content-center text-center rounded" style="height: 400px;">
+                                <div class="service-icon btn-square">
+                                    <i class="fa fa-phone fa-2x" style="color: orangered;"></i>
+                                </div>
+                                <h5 class="mb-3" style="color: orangered;">Customer Service: </h5>
+                                <p>Chatbots are extensively used in customer service to provide quick responses to frequently asked questions, assist with order tracking, handle complaints, and provide personalized recommendations.</p>
+                                <a class="btn px-3 mt-auto mx-auto" style="color: orangered;" href="{% url 'services' %}">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pt-5 pb-5">
+                            <div class="service-item d-flex flex-column justify-content-center text-center rounded" style="height: 400px;">
+                                <div class="service-icon btn-square">
+                                    <i class="fa fa-money-check fa-2x" style="color: orangered;"></i>
+                                </div>
+                                <h5 class="mb-3" style="color: orangered;">Banking and Finance:  </h5>
+                                <p>Chatbots are employed by banks and financial institutions to answer customer inquiries regarding account balances, transaction history, and general banking information. </p>
+                                <a class="btn px-3 mt-auto mx-auto" style="color: orangered;" href="{% url 'services' %}">Read More</a>
+                            </div>
+                        </div>
+    
+
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock content %}

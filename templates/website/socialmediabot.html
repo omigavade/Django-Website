@@ -1,0 +1,78 @@
+{% extends 'website/base.html' %}
+{% load static%}
+{% block content %}
+
+<div class="container-fluid mt-5  mb-5 text-center" style="background-color: orangered">
+  <div class="container pt-5">
+    <div class="row g-5 pt-5">
+      <div class="col-lg-12 align-self-center text-center text-lg-start mb-lg-5">
+        <h1 class="display-4 text-white mt-4 mb-4 animated slideInRight">Social Buddy for Your Business</h1>
+        <a href="{% url 'socialmediabot' %}" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight">Read More</a>
+        <a href="{% url 'demo' %}" class="btn btn-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Book Demo</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Hero End -->
+  
+  
+
+
+
+  <div class="container-fluid bg-light py-5">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <!-- Text content -->
+                <h1 class="mb-4">What is AI  Instagram Buddy?</h1>
+                <p class="mb-4">An Instagram bot is a software application or script that automates various actions on the Instagram social media platform. Instagram bots are designed to perform tasks such as liking posts, commenting on photos, following or unfollowing users, and even posting content on behalf of the user.</p>
+                <p class="mb-4">Instagram bots can be beneficial for businesses to automate certain tasks, provide timely information, and enhance customer engagement on the widely-used messaging platform.</p>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <!-- Image -->
+                <div class="image-container">
+                  <img src="{% static 'img/insta.jpg' %}" alt="My Image " style="width:75px; height:75px;">
+                  <img src="{% static 'img/instaabout.jpg' %}" alt="My Image " style="width:500px; height:400px;">
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="container-fluid py-5" style="background-color: orangered">
+    <div class="container py-4">
+        <div class="row justify-content-center">
+  
+            <div class="col-lg-12 wow fadeIn" data-wow-delay="0.5s">
+  
+                <h1 class="mb-4 text-center">Do you like to create a Virtual Buddy for your Business?</h1>
+                <div class="text-center">
+                    <a href="{% url 'contact' %}" class="btn btn-light py-3 px-5 rounded-pill me-3 animated slideInRight">Contact Us</a>
+                    <a href="{% url 'demo' %}" class="btn btn-light py-3 px-5 rounded-pill animated slideInRight">Book Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="container-fluid bg-light py-5">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <!-- Text content -->
+                <h1 class="mb-4">What is AI Facebook Buddy?</h1>
+                <p class="mb-4">A Facebook bot, also known as a Messenger bot or Facebook Messenger bot, is an automated software program designed to interact with users through the Facebook Messenger platform. Facebook bots leverage the messaging capabilities of Facebook to deliver automated responses, perform tasks, and provide information to users.</p>
+                <p class="mb-4">Facebook bots offer businesses and developers the opportunity to automate interactions, provide instant responses, and engage with users directly within the Facebook Messenger ecosystem. </p>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <!-- Image -->
+                <div class="image-container">
+                  <img src="{% static 'img/facebook.png' %}" alt="My Image " style="width:75px; height:75px;">
+                  <img src="{% static 'img/fb.jpg' %}" alt="My Image " style="width:500px; height:400px;">
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+{% endblock content %}

@@ -1,0 +1,38 @@
+{% extends 'website/base.html' %}
+{% load static%}
+{% block content %}
+
+<div class="container-fluid mt-5 mb-5 text-center" style="background-color: orangered">
+  <div class="container pt-5">
+    <div class="row g-5 pt-5">
+      <div class="col-lg-12 align-self-center text-center text-lg-start mb-lg-5">
+        <h1 class="display-4 text-white mt-4 mb-4 animated slideInRight">Email Buddy for Your Business</h1>
+        <a href="{% url 'services' %}" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight">Read More</a>
+        <a href="{% url 'demo' %}" class="btn btn-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Book Demo</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Hero End -->
+
+<div class="container-fluid bg-light py-5">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <!-- Text content -->
+                <h1 class="mb-4 text-center">What is Email Buddy?</h1>
+                <p class="mb-4">Email bots are programmed to perform various tasks, such as sending automated replies, categorizing and organizing incoming messages, forwarding emails to appropriate recipients, and extracting relevant information from emails. They can also be integrated with other software systems or databases to perform more complex actions, such as updating customer information or triggering specific workflows based on the content of an email.</p>
+                <p class="mb-4">Email bots can be particularly useful in customer support, where they can provide instant responses to common inquiries or direct customers to the appropriate resources. They can also be employed in marketing campaigns to automate email outreach or handle subscription management.</p>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <!-- Image -->
+                <div class="image-container text-center">
+                  <img src="{% static 'img/emailbot.jpg' %}" alt="My Image " style="width:500px; height:400px;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}

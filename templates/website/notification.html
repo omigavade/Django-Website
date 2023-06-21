@@ -1,0 +1,13 @@
+
+<div class="cookie-notification">
+    <p>This website uses cookies to improve your experience. By continuing to use this site, you accept the use of cookies.</p>
+    <button id="accept-cookies">Accept Cookies</button>
+</div>
+
+<script>
+    document.getElementById('accept-cookies').addEventListener('click', function() {
+        document.querySelector('.cookie-notification').style.display = 'none';
+        // Send an AJAX request to handle the cookie acceptance on the backend
+    });
+</script>
+

@@ -1,0 +1,42 @@
+<!-- Navbar Start -->
+{% load static %}
+<nav class="navbar navbar-expand-lg fixed-top" id="navbar" style="background-color:orangered">
+    <div class="container">
+          
+          <a href="{% url 'index' %}">
+            <img src="{% static 'img/logo-main.png' %}" alt="Image" style="width: 250px; height: 60px;">
+          </a>
+          
+        <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto" style="background-color:orangered">
+                <a href="{% url 'index' %}" class="nav-item nav-link active">Home</a>
+                <a href="{% url 'about' %}" class="nav-item nav-link">About</a>
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Products
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="productsDropdown">
+                        <a class="dropdown-item" href="{% url 'virtualbuddy' %}">Virtual Buddy(Video Bot)</a>
+                        <a class="dropdown-item" href="{% url 'voicebot' %}">Voice Bot</a>
+                        <a class="dropdown-item" href="{% url 'textbot' %}">Text Bot</a>
+                        <a class="dropdown-item" href="{% url 'emailbot' %}">Email Bot</a>
+                        <a class="dropdown-item" href="{% url 'smsbot' %}">SMS Bot</a>
+                        <a class="dropdown-item" href="{% url 'whatsappbot' %}">Whatsapp Bot</a>
+                        <a class="dropdown-item" href="{% url 'telegrambot' %}">Telegram Bot</a>
+                        <a class="dropdown-item" href="{% url 'socialmediabot' %}">Social Media Bot</a>
+                        <a class="dropdown-item" href="{% url 'newsbot' %}">News Bot</a>
+                        <!-- Add more product items as needed -->
+                    </div>
+                </div>
+                <a href="{% url 'services' %}" class="nav-item nav-link">Services</a>
+                <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
+                <a href="{% url 'demo' %}" class="btn btn-light rounded-pill animated slideInRight">Book Demo</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->

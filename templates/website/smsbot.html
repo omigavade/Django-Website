@@ -1,0 +1,42 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid mt-5  mb-5 text-center" style="background-color: orangered">
+  <div class="container pt-5">
+    <div class="row g-5 pt-5">
+      <div class="col-lg-12 align-self-center text-center text-lg-start mb-lg-5">
+        <h1 class="display-4 text-white mt-4 mb-4 animated slideInRight">SMS Buddy for Your Business</h1>
+        <a href="{% url 'smsbot' %}" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInRight">Read More</a>
+        <a href="{% url 'demo' %}" class="btn btn-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Book Demo</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Hero End -->
+  
+  
+
+
+
+  <div class="container-fluid bg-light py-5">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <!-- Text content -->
+                <h1 class="mb-4">What is AI  SMS Text Buddy?</h1>
+                <p class="mb-4">An SMS bot, also known as a text message bot or SMS chatbot, is a computer program or algorithm designed to interact with users through text messages sent via Short Message Service (SMS). Unlike messaging apps like WhatsApp or Telegram, SMS bots operate through traditional cellular networks and can reach users with basic mobile phones that support SMS.</p>
+                <p class="mb-4">SMS bots are widely used by businesses, organizations, and service providers to automate communication, deliver information, and enhance customer experiences through SMS interactions.</p>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <!-- Image -->
+                <div class="image-container">
+                  <img src="{% static 'img/smsbot.jpg' %}" alt="My Image " style="width:600px; height:400px;">
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+{% endblock content %}
